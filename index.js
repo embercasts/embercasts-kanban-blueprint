@@ -2,5 +2,9 @@
 'use strict';
 
 module.exports = {
-  name: 'embercasts-kanban-blueprint'
+  name: 'embercasts-kanban-blueprint',
+
+  included(app) {
+    app.import('vendor/kanban.css');
+  }
 };
